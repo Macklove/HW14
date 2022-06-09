@@ -64,8 +64,13 @@
 		AD1306372852AE4400B40064 /* HW14 */ = {
 			isa = PBXGroup;
 			children = (
+				AD1306382852AE4400B40064 /* AppDelegate.swift */,
+				AD13063A2852AE4400B40064 /* SceneDelegate.swift */,
 				AD13064C2852AF3E00B40064 /* VC */,
-				AD1306552852B1F900B40064 /* Other */,
+				AD13063E2852AE4400B40064 /* Main.storyboard */,
+				AD1306412852AE4500B40064 /* Assets.xcassets */,
+				AD1306432852AE4500B40064 /* LaunchScreen.storyboard */,
+				AD1306462852AE4500B40064 /* Info.plist */,
 			);
 			path = HW14;
 			sourceTree = "<group>";
@@ -80,19 +85,6 @@
 				AD1306532852B01A00B40064 /* SearchViewController.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		AD1306552852B1F900B40064 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				AD1306382852AE4400B40064 /* AppDelegate.swift */,
-				AD13063A2852AE4400B40064 /* SceneDelegate.swift */,
-				AD1306412852AE4500B40064 /* Assets.xcassets */,
-				AD1306432852AE4500B40064 /* LaunchScreen.storyboard */,
-				AD1306462852AE4500B40064 /* Info.plist */,
-				AD13063E2852AE4400B40064 /* Main.storyboard */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
