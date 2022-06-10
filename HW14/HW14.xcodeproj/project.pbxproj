@@ -20,6 +20,7 @@
 		AD9ED7472853BA460018637C /* SectionOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */; };
 		AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */; };
 		AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED74B2853BB710018637C /* SectionCollectionView.swift */; };
+		AD9ED74F2853BDB60018637C /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED74E2853BDB60018637C /* Metrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSecondCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD9ED74B2853BB710018637C /* SectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionView.swift; sourceTree = "<group>"; };
+		AD9ED74E2853BDB60018637C /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				AD9ED74B2853BB710018637C /* SectionCollectionView.swift */,
+				AD9ED74E2853BDB60018637C /* Metrics.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				AD13063D2852AE4400B40064 /* ViewController.swift in Sources */,
 				AD1306542852B01A00B40064 /* SearchViewController.swift in Sources */,
+				AD9ED74F2853BDB60018637C /* Metrics.swift in Sources */,
 				AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */,
 				AD1306392852AE4400B40064 /* AppDelegate.swift in Sources */,
 				AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */,
