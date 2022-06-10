@@ -17,6 +17,9 @@
 		AD1306502852AFAD00B40064 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13064F2852AFAD00B40064 /* ForYouViewController.swift */; };
 		AD1306522852AFF300B40064 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1306512852AFF300B40064 /* AlbumsViewController.swift */; };
 		AD1306542852B01A00B40064 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1306532852B01A00B40064 /* SearchViewController.swift */; };
+		AD9ED7472853BA460018637C /* SectionOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */; };
+		AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */; };
+		AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED74B2853BB710018637C /* SectionCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AD13064F2852AFAD00B40064 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		AD1306512852AFF300B40064 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		AD1306532852B01A00B40064 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD9ED74B2853BB710018637C /* SectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +70,11 @@
 		AD1306372852AE4400B40064 /* HW14 */ = {
 			isa = PBXGroup;
 			children = (
+				AD9ED74D2853BC2B0018637C /* Model */,
+				AD9ED7482853BA580018637C /* Cell */,
+				AD13064C2852AF3E00B40064 /* VC */,
 				AD1306382852AE4400B40064 /* AppDelegate.swift */,
 				AD13063A2852AE4400B40064 /* SceneDelegate.swift */,
-				AD13064C2852AF3E00B40064 /* VC */,
 				AD13063E2852AE4400B40064 /* Main.storyboard */,
 				AD1306412852AE4500B40064 /* Assets.xcassets */,
 				AD1306432852AE4500B40064 /* LaunchScreen.storyboard */,
@@ -85,6 +93,23 @@
 				AD1306532852B01A00B40064 /* SearchViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		AD9ED7482853BA580018637C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */,
+				AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AD9ED74D2853BC2B0018637C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD9ED74B2853BB710018637C /* SectionCollectionView.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +185,14 @@
 			files = (
 				AD13063D2852AE4400B40064 /* ViewController.swift in Sources */,
 				AD1306542852B01A00B40064 /* SearchViewController.swift in Sources */,
+				AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */,
 				AD1306392852AE4400B40064 /* AppDelegate.swift in Sources */,
+				AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */,
 				AD1306522852AFF300B40064 /* AlbumsViewController.swift in Sources */,
 				AD13064E2852AF8E00B40064 /* MediaLibraryViewController.swift in Sources */,
 				AD1306502852AFAD00B40064 /* ForYouViewController.swift in Sources */,
 				AD13063B2852AE4400B40064 /* SceneDelegate.swift in Sources */,
+				AD9ED7472853BA460018637C /* SectionOneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
