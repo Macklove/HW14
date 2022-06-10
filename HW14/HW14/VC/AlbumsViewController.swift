@@ -87,7 +87,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
             let innerGroup = NSCollectionLayoutGroup.vertical(layoutSize: innerGroupSize, subitem: item, count: columns)
 
             if [0, 1, 2].contains(sectionNumber) {
-                // group - horizontal
+            // group - horizontal
                 let nestedGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90), heightDimension: .fractionalHeight(heightDimensionGroup))
                 nestedGroup = NSCollectionLayoutGroup.horizontal(layoutSize: nestedGroupSize, subitems: [innerGroup])
             } else {
