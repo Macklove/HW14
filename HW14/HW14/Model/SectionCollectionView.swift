@@ -15,6 +15,7 @@ struct Section {
 enum SettingsOptionType {
     case myAlbumCell(model: FotoMYAlbum)
     case commonAlbumCell(model: FotoCommonAlbums)
+    case peoplePlaceCell(model: FotoPeopleAndPlace)
     case typeMediaCell(model: FotoTypeMedia)
     case othersCell(model: FotoOthers)
 }
@@ -72,7 +73,7 @@ extension Section {
             ]),
             Section(title: "Люди и места", options: [
                 .peoplePlaceCell(model: FotoPeopleAndPlace(title: "Люди", icon: UIImage(named: "peopleAlbum"), countFoto: "13")),
-                .peoplePlaceCell(model: FotoPeopleAndPlace(title: "Места", icon: UIImage(named: "placeAlbum"), countFoto: "10 297"))
+                .peoplePlaceCell(model: FotoPeopleAndPlace(title: "Места", icon: UIImage(named: "placeAlbum"), countFoto: "297"))
             ]),
             Section(title: "Типы медиафайлов", options: [
                 .typeMediaCell(model: FotoTypeMedia(title: "Видео", icon: UIImage(systemName: "video"), countFoto: "1 025")),

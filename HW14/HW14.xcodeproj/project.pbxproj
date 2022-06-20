@@ -21,6 +21,10 @@
 		AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */; };
 		AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED74B2853BB710018637C /* SectionCollectionView.swift */; };
 		AD9ED74F2853BDB60018637C /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9ED74E2853BDB60018637C /* Metrics.swift */; };
+		ADDDACE52860C64800D8F7DD /* SectionFhirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDDACE42860C64800D8F7DD /* SectionFhirdCollectionViewCell.swift */; };
+		ADDDACE72860C69200D8F7DD /* SectionFourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDDACE62860C69200D8F7DD /* SectionFourthCollectionViewCell.swift */; };
+		ADDDACE92860C6B800D8F7DD /* SectionFifthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDDACE82860C6B800D8F7DD /* SectionFifthCollectionViewCell.swift */; };
+		ADDDACEB2860CD9B00D8F7DD /* AlbumsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDDACEA2860CD9B00D8F7DD /* AlbumsHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSecondCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD9ED74B2853BB710018637C /* SectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionView.swift; sourceTree = "<group>"; };
 		AD9ED74E2853BDB60018637C /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		ADDDACE42860C64800D8F7DD /* SectionFhirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFhirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADDDACE62860C69200D8F7DD /* SectionFourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFourthCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADDDACE82860C6B800D8F7DD /* SectionFifthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFifthCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADDDACEA2860CD9B00D8F7DD /* AlbumsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,9 @@
 			children = (
 				AD9ED7462853BA460018637C /* SectionOneCollectionViewCell.swift */,
 				AD9ED7492853BACB0018637C /* SectionSecondCollectionViewCell.swift */,
+				ADDDACE42860C64800D8F7DD /* SectionFhirdCollectionViewCell.swift */,
+				ADDDACE62860C69200D8F7DD /* SectionFourthCollectionViewCell.swift */,
+				ADDDACE82860C6B800D8F7DD /* SectionFifthCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				AD9ED74B2853BB710018637C /* SectionCollectionView.swift */,
+				ADDDACEA2860CD9B00D8F7DD /* AlbumsHeaderView.swift */,
 				AD9ED74E2853BDB60018637C /* Metrics.swift */,
 			);
 			path = Model;
@@ -186,11 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDDACE52860C64800D8F7DD /* SectionFhirdCollectionViewCell.swift in Sources */,
 				AD13063D2852AE4400B40064 /* ViewController.swift in Sources */,
 				AD1306542852B01A00B40064 /* SearchViewController.swift in Sources */,
+				ADDDACEB2860CD9B00D8F7DD /* AlbumsHeaderView.swift in Sources */,
 				AD9ED74F2853BDB60018637C /* Metrics.swift in Sources */,
 				AD9ED74C2853BB710018637C /* SectionCollectionView.swift in Sources */,
 				AD1306392852AE4400B40064 /* AppDelegate.swift in Sources */,
+				ADDDACE92860C6B800D8F7DD /* SectionFifthCollectionViewCell.swift in Sources */,
+				ADDDACE72860C69200D8F7DD /* SectionFourthCollectionViewCell.swift in Sources */,
 				AD9ED74A2853BACB0018637C /* SectionSecondCollectionViewCell.swift in Sources */,
 				AD1306522852AFF300B40064 /* AlbumsViewController.swift in Sources */,
 				AD13064E2852AF8E00B40064 /* MediaLibraryViewController.swift in Sources */,

@@ -9,7 +9,7 @@ import UIKit
 
 class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-// MARK: - Elements
+    // MARK: - Elements
     
     lazy var collectionView: UICollectionView = {
         let viewLayout = UICollectionViewFlowLayout()
@@ -20,13 +20,13 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
     lazy var bottomLine: CALayer = {
         let bottomLine = CALayer()
         bottomLine.frame = CGRect(x: 0, y: -3, width: view.frame.width, height: 2)
-        bottomLine.backgroundColor = UIColor.systemGray.cgColor
+        bottomLine.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
         return bottomLine
     }()
     
     private var models: [Section] = Section.getSections()
     
-// MARK: - Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
         view.backgroundColor = .white
         navigationItem.title = "Альбомы"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
     }
     
     private func setupHierarchy() {
@@ -64,6 +65,10 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         collectionView.register(SectionOneCollectionViewCell.self, forCellWithReuseIdentifier: SectionOneCollectionViewCell.identifier)
         collectionView.register(SectionSecondCollectionViewCell.self, forCellWithReuseIdentifier: SectionSecondCollectionViewCell.identifier)
+        collectionView.register(SectionFhirdCollectionViewCell.self, forCellWithReuseIdentifier: SectionFhirdCollectionViewCell.identifier)
+        collectionView.register(SectionFourthCollectionViewCell.self, forCellWithReuseIdentifier: SectionFourthCollectionViewCell.identifier)
+        collectionView.register(SectionFifthCollectionViewCell.self, forCellWithReuseIdentifier: SectionFifthCollectionViewCell.identifier)
+        collectionView.register(AlbumsHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -87,7 +92,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
             let innerGroup = NSCollectionLayoutGroup.vertical(layoutSize: innerGroupSize, subitem: item, count: columns)
 
             if [0, 1, 2].contains(sectionNumber) {
-            // group - horizontal
+                // group - horizontal
                 let nestedGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90), heightDimension: .fractionalHeight(heightDimensionGroup))
                 nestedGroup = NSCollectionLayoutGroup.horizontal(layoutSize: nestedGroupSize, subitems: [innerGroup])
             } else {
@@ -130,6 +135,46 @@ class AlbumsViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             cell.configure(with: model)
             return cell
+        case .peoplePlaceCell(let model):
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SectionFhirdCollectionViewCell.identifier, for: indexPath) as? SectionFhirdCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            cell.configure(with: model)
+            return cell
+        case .typeMediaCell(let model):
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SectionFourthCollectionViewCell.identifier, for: indexPath) as? SectionFourthCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            cell.configure(with: model)
+            return cell
+        case .othersCell(let model):
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SectionFifthCollectionViewCell.identifier, for: indexPath) as? SectionFifthCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            cell.configure(with: model)
+            return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let model = models[indexPath.section]
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath) as? AlbumsHeaderView else {
+            return UICollectionReusableView()
+        }
+        header.layer.addSublayer(bottomLine)
+        header.configure(with: model)
+        
+        return header
+    }
+    
+    // MARK: - Actions
+    @objc func addTapped() {
+        print("""
+            Добавить:
+        - Новый альбом
+        - Новую папку
+        - Новый общие альбом
+        """)
     }
 }
